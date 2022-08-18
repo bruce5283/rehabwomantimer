@@ -37,7 +37,7 @@ font-family: verdana;
 color: white;
 font-size: 15px;
 width: 200px;
-background-color: #12A89E;
+background-color: #0FACD7;
 padding: 10px 24px;
 border: none;
 border-radius: 8px;
@@ -100,8 +100,8 @@ function playElement() {
 
 
 function countdown() {
-  document.getElementById("pre").style.color ="#12A89E";
-  document.getElementById("pre").innerHTML = --time + "s work time";
+  document.getElementById("pre").style.color ="#0FACD7";
+  document.getElementById("pre").innerHTML = --time + "s remaining";
   if(time === 0) return onend();
   setTimeout(countdown, 1000);
 }
@@ -113,8 +113,8 @@ function playBuffer() {
 }
 
 function onend() {
-  document.getElementById("pre").style.color ="#A81248";
-  document.getElementById("pre").innerHTML = "NEXT MOVEMENT";
+  document.getElementById("pre").style.color ="#FF6103";
+  document.getElementById("pre").innerHTML = "CLICK NEXT";
   btn.disabled = false;
   time = ${time};
 }

@@ -102,7 +102,6 @@ function playElement() {
 function countdown() {
   document.getElementById("pre").style.color ="#0FACD7";
   document.getElementById("pre").innerHTML = --time + "s remaining";
-  --time;
   if(time === 0) return onend();
   setTimeout(countdown, 1000);
 }

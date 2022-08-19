@@ -101,10 +101,10 @@ function playElement() {
 
 function countdown() {
   document.getElementById("pre").style.color ="#0FACD7";
-  --time;
   var minutes = Math.floor(time / 60);
   var seconds = time - minutes*60;
   document.getElementById("pre").innerHTML = minutes +"m " + seconds + "s remaining";
+  --time;
   if(time === 0) return onend();
   setTimeout(countdown, 1000);
 }
